@@ -52,7 +52,7 @@
 
     <!------------template------------>
 
-    <section id="detalje">
+    <section class="detalje">
         <article>
             <button class="tilbage"></button>
             <h1></h1>
@@ -78,6 +78,55 @@
 
     </footer>
     <script>
+        window.addEventListener("load", sidenVises);
+
+
+        function sidenVises() {
+            console.log("siden vises");
+            document.querySelector("#burgermenu").addEventListener("click", burger);
+        }
+        // burgermenu animation -------------------------------
+        function burger() {
+            console.log("burgermenu change");
+            this.classList.toggle("burger");
+            document.querySelector("#menu").classList.toggle("hide_nav");
+        }
+
+        // burgermenu animation -------------------------------
+        //Går op og får URL'en
+        const Urlparameter = new URLSearchParams(window.location.search);
+
+        //Giver mig den del af parameteret der er ID'et
+        const id = Urlparameter.get("id");
+
+        const detalje = document.querySelector(".detalje");
+        let destination;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+        }
+
+        async function hentData() {
+            let jsonData = await fetch(` - wordpress url her ${id}`);
+
+            destination = await jsonData.json();
+
+            visDestination();
+        }
+
+        //sammenligner med det ID vi har fået tilsendt oppe i URL'en
+        function visSmykke() {
+
+            detalje.querySelector("button").addEventListener("click", () => {
+                history.back();
+            });
+            //hent flere p, h1, img her
+            detalje.querySelector("h1").textContent = destination.title.rendered;
+            detalje.querySelector("p").innerHTML = destination.content.rendered;
+        }
+
     </script>
 </body>
 
