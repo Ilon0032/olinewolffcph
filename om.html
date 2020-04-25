@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!------------mobile first nav------------>
+        <nav id="mobil_nav">
+            <div>
+                <a href="index.html">
+                    <img src="" alt="logo">
+                </a>
+            </div>
+            <ul id="mobil_nav_links">
+                <li><a href="index.html">OlineWolff cph</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="display.html">Se smykkerne på</a></li>
+                <li><a href="om.html">Om</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div id="burgermenu" onclick="burger(this)">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </nav>
+
+        <!------------desktop nav------------>
+        <nav id="desktop_nav">
+            <ul>
+                <div>
+                    <a href="index.html">
+                        <img src="" alt="logo">
+                    </a>
+                </div>
+
+                <li><a href="index.html">OlineWolff cph</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="display.html">Se smykkerne på</a></li>
+                <li><a href="om.html">Om</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!------------mobil main------------>
+    <!------------mobil footer------------>
+    <footer>
+        <ul>
+            <li><a href="om.html">OlineWolff cph</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div>
+            <a href="https://www.facebook.com/olinewolffcph"><img src="billeder/facebook.png"></a>
+            <a href="https://www.instagram.com/olinewolffcph"><img src="billeder/instagram.png"></a>
+        </div>
+
+    </footer>
+    <!------------js script------------>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        console.log("load");
+
+        // link til wordpress json under her
+        const endpoint = ;
+
+        async function start() {
+            console.log("start");
+            const response = await fetch(endpoint);
+            const json = await response.json();
+            vis(json);
+        }
+
+        // indhentning af json her
+        function vis(page) {
+            console.log(page);
+            //            document.querySelector("h1").textContent = page.title.rendered;
+            //            document.querySelector("p").innerHTML = page.content.rendered;
+            //        }
+
+    </script>
+    <script src="generel_script.js"></script>
+</body>
+
+</html>
