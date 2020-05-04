@@ -78,21 +78,6 @@
 
     </footer>
     <script>
-        window.addEventListener("load", sidenVises);
-
-
-        function sidenVises() {
-            console.log("siden vises");
-            document.querySelector("#burgermenu").addEventListener("click", burger);
-        }
-        // burgermenu animation -------------------------------
-        function burger() {
-            console.log("burgermenu change");
-            this.classList.toggle("burger");
-            document.querySelector("#menu").classList.toggle("hide_nav");
-        }
-
-        // burgermenu animation -------------------------------
         //Går op og får URL'en
         const Urlparameter = new URLSearchParams(window.location.search);
 
@@ -100,7 +85,7 @@
         const id = Urlparameter.get("id");
 
         const detalje = document.querySelector(".detalje");
-        let destination;
+        let smykke;
 
         document.addEventListener("DOMContentLoaded", start);
 
@@ -109,9 +94,9 @@
         }
 
         async function hentData() {
-            let jsonData = await fetch(` - wordpress url her ${id}`);
+            let jsonData = await fetch(`http://lunahvalsoe.dk/kea/2_semester/eksamensprojekt_tema10/wordpress/wp-json/wp/v2/smykke/${id}`);
 
-            destination = await jsonData.json();
+            smykke = await jsonData.json();
 
             visSmykke();
         }
@@ -123,8 +108,13 @@
                 history.back();
             });
             //hent flere p, h1, img her
-            detalje.querySelector("h1").textContent = destination.title.rendered;
-            detalje.querySelector("p").innerHTML = destination.content.rendered;
+            detalje.querySelector("h1").textContent = smykke.title.rendered;
+
+            detalje.querySelector("img").innerHTML = smykke.billede.rendered;
+
+            detalje.querySelector("p").innerHTML = smykke.content.rendered;
+
+            detalje.querySelector("p").innerHTML = smykke.farve.rendered;
         }
 
     </script>
