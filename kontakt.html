@@ -50,6 +50,10 @@
 
 
     <!------------mobil main------------>
+    <section id="om">
+        <h1></h1>
+        <p></p>
+    </section>
     <!------------mobil footer------------>
     <footer>
         <ul>
@@ -68,7 +72,7 @@
         console.log("load");
 
         // link til wordpress json under her
-        const endpoint = ;
+        const endpoint = "http://lunahvalsoe.dk/kea/2_semester/eksamensprojekt_tema10/wordpress/wp-json/wp/v2/pages/8";
 
         async function start() {
             console.log("start");
@@ -80,9 +84,9 @@
         // indhentning af json her
         function vis(page) {
             console.log(page);
-            //            document.querySelector("h1").textContent = page.title.rendered;
-            //            document.querySelector("p").innerHTML = page.content.rendered;
-            //        }
+            document.querySelector("h1").textContent = page.title.rendered;
+            document.querySelector("p").innerHTML = page.content.rendered;
+        }
 
     </script>
     <script src="generel_script.js"></script>
