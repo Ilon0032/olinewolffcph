@@ -489,24 +489,10 @@ nav {
 
 }
 
-
-
 #om {
     display: grid;
-    grid-template-columns: 1fr 1f;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
-
-
-.data_container {
-    display: grid;
-    grid-template-columns: 300px 1fr 1f 1fr;
-}
-
-/*
-#om .display {
-    grid-template-columns: 1fr 1f 1fr;
-}*/
-
 
 
 
