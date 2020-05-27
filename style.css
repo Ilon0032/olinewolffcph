@@ -497,9 +497,9 @@ nav {
 }
 
 
-#om .display_temp {
+.data_container {
     display: grid;
-    grid-template-columns: 1fr 1f 1fr;
+    grid-template-columns: 300px 1fr 1f 1fr;
 }
 
 /*
