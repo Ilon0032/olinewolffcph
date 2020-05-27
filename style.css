@@ -17,7 +17,8 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
+h2,
+h3 {
     font-family: "Athena-Regular";
     text-align: center;
     font-size: 1.4em;
@@ -25,6 +26,7 @@ h2 {
 
 a,
 li {
+    font-family: "Athena-Regular";
     list-style: none;
     text-decoration: none;
     color: #000;
@@ -33,11 +35,13 @@ li {
 
 p {
     font-size: 1.1em;
-    font-family: 'bellotalight';
+    font-family: "bellotalight";
     margin: 1em;
 }
 
 .wp-block-separator {
+    margin-top: 4em;
+    margin-bottom: 4em;
     margin-left: 4em;
     margin-right: 4em;
 }
@@ -48,6 +52,7 @@ footer {
     align-content: center;
     align-items: center;
     background-color: #99AABF;
+    height: 20vh;
 }
 
 footer ul li {
@@ -328,14 +333,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
 /*KONTAKT MOBIL CSS*/
 
 
@@ -493,6 +490,22 @@ nav {
 }
 
 
+
+#om {
+    display: grid;
+    grid-template-columns: 1fr 1f;
+}
+
+
+.data_container {
+    display: grid;
+    grid-template-columns: 300px 1fr 1f 1fr;
+}
+
+/*
+#om .display {
+    grid-template-columns: 1fr 1f 1fr;
+}*/
 
 
 
