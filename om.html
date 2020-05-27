@@ -119,10 +119,10 @@
 
                 let klon = displayTemplate.cloneNode(true).content;
 
-                klon.querySelector(".navn").textContent = display.navn_p_smykke;
+                klon.querySelector(".navn").innerHTML = display.navn_p_smykke;
                 klon.querySelector("img").src = display.billede.guid;
                 klon.querySelector("img").alt = "Billede af " + display.navn_p_smykke;
-                klon.querySelector(".instagram-konto_eller_navn").textContent = display.content.rendered;
+                klon.querySelector(".instagram-konto_eller_navn").innerHTML = display.content.rendered;
 
 
                 /* eventlistener som går til ny side ved klik på enkel smykke */
@@ -133,7 +133,10 @@
                 container.appendChild(klon)
             })
         }
+
     </script>
 
     <script src="generel_script.js"></script>
-</body></html>
+</body>
+
+</html>
