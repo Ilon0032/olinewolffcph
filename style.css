@@ -36,15 +36,22 @@ footer {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    background-color: #99AABF;
 }
 
 footer ul li {
     padding-bottom: 0.5em;
     text-decoration: underline;
+    color: #fff;
+}
+
+footer ul li a {
+    color: #fff;
 }
 
 footer i {
     padding-right: 0.3em;
+    color: #fff;
 }
 
 #btn {
@@ -89,6 +96,8 @@ footer i {
     text-align: end;
 
 }
+
+
 
 .nav_links {
     width: 60%;
