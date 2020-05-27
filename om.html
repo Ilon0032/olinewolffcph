@@ -126,12 +126,13 @@
 
 
                 /* eventlistener som går til ny side ved klik på enkel smykke */
-                klon.querySelector(".displays").addEventListener("click", () => {
+                klon.querySelector(".display").addEventListener("click", () => {
                     location.href = `singleview.html?id=${display.id}`;
                 });
 
                 container.appendChild(klon)
             })
+        }
     </script>
 
     <script src="generel_script.js"></script>
