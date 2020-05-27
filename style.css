@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 h1 {
@@ -29,6 +30,11 @@ p {
     font-size: 1.1em;
     font-family: 'bellotalight';
     margin: 1em;
+}
+
+.wp-block-separator {
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 footer {
@@ -428,24 +434,39 @@ nav {
 /*MEDIA QUERY WEB CSS*/
 
 @media screen and (min-width:1080px) {
-    #main_nav {
 
+    h1,
+    h2 {
+        margin-top: 1.5em;
+    }
+
+    p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #main_nav {
         display: flex;
         justify-content: center;
         display: block;
+        padding-top: 2em;
+        padding-left: 4em;
+        padding-right: 4em;
 
     }
 
     #main_nav ul {
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
+        border-top: 3px solid #99AABF;
+        border-bottom: 3px solid #99AABF;
+
     }
 
     #main_nav ul li {
         padding-top: 1em;
         padding-bottom: 1em;
+        letter-spacing: 0.2em;
     }
 
 
