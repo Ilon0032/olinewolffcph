@@ -11,41 +11,31 @@
 
 <body>
     <header>
-        <!------------mobile first nav------------>
-        <nav id="mobil_nav">
-            <div>
-                <a href="index.html">
-                    <img src="" alt="logo">
-                </a>
-            </div>
-            <ul id="mobil_nav_links">
-                <li><a href="index.html">OlineWolff cph</a></li>
-                <li><a href="katalog.html">Katalog</a></li>
-                <li><a href="om.html">Om</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-            <div id="burgermenu" onclick="burger(this)">
-                <div id="bar1"></div>
-                <div id="bar2"></div>
-                <div id="bar3"></div>
-            </div>
-        </nav>
+        <navbar>
+            <ul class="nav_links">
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="katalog.html">KATALOG</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
 
-        <!------------desktop nav------------>
-        <nav id="desktop_nav">
-            <ul>
-                <div>
-                    <a href="index.html">
-                        <img src="" alt="logo">
-                    </a>
-                </div>
-
-                <li><a href="index.html">OlineWolff cph</a></li>
-                <li><a href="katalog.html">Katalog</a></li>
-                <li><a href="om.html">Om</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-        </nav>
+
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="index.html">HJEM</a></li>
+                    <li><a href="katalog.html">KATALOG</a></li>
+                    <li><a href="om.html">OM</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </navbar>
     </header>
 
     <!------------template------------>
@@ -55,10 +45,9 @@
             <button class="tilbage"></button>
             <h1></h1>
             <img src="" alt="">
-            <p></p>
-            <p></p>
-            <h2></h2>
-            <h3></h3>
+            <p class="info"></p>
+            <p class="pris"></p>
+            <p class="farve"></p>
         </article>
     </section>
 
@@ -111,12 +100,14 @@
 
             detalje.querySelector("img").src = smykke.billede.guid;
 
-            detalje.querySelector("p").textContent = smykke.content.rendered;
-
-            detalje.querySelector("p").textContent = smykke.farve.rendered;
+            detalje.querySelector(".info").textContent = smykke.content.rendered;
+            detalje.querySelector(".farve").textContent = smykke.farve;
+            detalje.querySelector(".pris").textContent = smykke.pris + ",-";
         }
 
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
