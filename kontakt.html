@@ -68,6 +68,8 @@
         // link til wordpress json under her
         const endpoint = "http://lunahvalsoe.dk/kea/2_semester/eksamensprojekt_tema10/wordpress/wp-json/wp/v2/pages/8";
 
+
+
         async function start() {
             console.log("start");
             const response = await fetch(endpoint);
@@ -81,6 +83,9 @@
             document.querySelector("h1").textContent = page.title.rendered;
             document.querySelector("p").innerHTML = page.content.rendered;
         }
+
     </script>
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
