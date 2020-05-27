@@ -17,7 +17,8 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
+h2,
+h3 {
     font-family: "Athena-Regular";
     text-align: center;
     font-size: 1.4em;
