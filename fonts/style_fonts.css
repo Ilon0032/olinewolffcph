@@ -1,9 +1,11 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "Athena-Regular";
+    font-family: "Athena-Regular";
 
-  src: url("./fonts/Athena-RegularPERSONALUSEONLY.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/Athena-RegularPERSONALUSEONLY.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
+    src: url("fonts/Athena-RegularPERSONALUSEONLY.woff") format("woff"),
+        /* Modern Browsers */
+        url("fonts/Athena-RegularPERSONALUSEONLY.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
 }
