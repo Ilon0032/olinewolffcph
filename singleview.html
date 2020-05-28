@@ -7,6 +7,7 @@
     <title>Håndlavet</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ee2b9569.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -60,8 +61,8 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
         <div>
-            <a href="https://www.facebook.com/olinewolffcph"><img src="billeder/facebook.png"></a>
-            <a href="https://www.instagram.com/olinewolffcph"><img src="billeder/instagram.png"></a>
+            <a> <i class="fab fa-facebook-f fa-3x"></i></a>
+            <a> <i class="fab fa-instagram fa-3x"></i></a>
         </div>
 
     </footer>
@@ -96,18 +97,15 @@
                 history.back();
             });
             //hent flere p, h1, img her
-            detalje.querySelector("h1").textContent = smykke.title.rendered;
+            detalje.querySelector("h1").innerHTML = smykke.title.rendered;
 
             detalje.querySelector("img").src = smykke.billede.guid;
 
-            detalje.querySelector(".info").textContent = smykke.content.rendered;
-            detalje.querySelector(".farve").textContent = smykke.farve;
-            detalje.querySelector(".pris").textContent = smykke.pris + ",-";
+            detalje.querySelector(".info").innerHTML = smykke.content.rendered;
+            detalje.querySelector(".farve").innerHTML = smykke.farve;
+            detalje.querySelector(".pris").innerHTML = smykke.pris + ",-";
         }
-
     </script>
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
