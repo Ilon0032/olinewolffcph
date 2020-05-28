@@ -21,7 +21,7 @@ img {
 }
 
 video {
-    width: 100%;
+    width: 100vw;
 }
 
 h1 {
@@ -31,7 +31,6 @@ h1 {
     margin: 1em;
     color: #626262;
     font-weight: 100;
-    letter-spacing: 0.2em;
 
 }
 
@@ -42,20 +41,25 @@ h3 {
     font-size: 1.4em;
     color: #626262;
     font-weight: 90;
-    letter-spacing: 0.2em;
+
 }
 
-a,
+
 li {
     font-family: "Athena-Regular";
     list-style: none;
     text-decoration: none;
-    color: #000;
-
-
+    color: #626262;
 }
 
-p .forside {
+a {
+    font-family: "Athena-Regular";
+    list-style: none;
+    text-decoration: none;
+    color: #626262;
+}
+
+p {
     font-size: 1.1em;
     font-family: "bellotalight";
     margin: 1em;
@@ -178,8 +182,8 @@ html {
     padding: 0.2em;
     margin: 1em;
     font-size: 1em;
-    border-bottom: 0.5px solid #000;
-    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #99AABF;
+    border-top: 0.5px solid #99AABF;
     font-family: "Athena-Regular";
 
 }
@@ -621,15 +625,17 @@ button {
 
 .display img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     margin: auto;
     padding: 30px;
 }
 
+/*
 footer {
     height: 10vh;
 }
+*/
 
 footer a {
     font-size: 1em;
