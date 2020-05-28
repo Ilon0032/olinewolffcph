@@ -580,7 +580,9 @@ button {
     }
 
     video {
-        width: 1200px;
+        width: 100vw;
+        height: 80vh;
+        object-fit: cover;
     }
 
 
