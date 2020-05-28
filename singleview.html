@@ -96,13 +96,13 @@
                 history.back();
             });
             //hent flere p, h1, img her
-            detalje.querySelector("h1").textContent = smykke.title.rendered;
+            detalje.querySelector("h1").innerHTML = smykke.title.rendered;
 
             detalje.querySelector("img").src = smykke.billede.guid;
 
-            detalje.querySelector(".info").textContent = smykke.content.rendered;
-            detalje.querySelector(".farve").textContent = smykke.farve;
-            detalje.querySelector(".pris").textContent = smykke.pris + ",-";
+            detalje.querySelector(".info").innerHTML = smykke.content.rendered;
+            detalje.querySelector(".farve").innerHTML = smykke.farve;
+            detalje.querySelector(".pris").innerHTML = smykke.pris + ",-";
         }
 
     </script>
