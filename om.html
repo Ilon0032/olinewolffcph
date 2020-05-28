@@ -43,13 +43,15 @@
 
     <section id="om">
         <h1></h1>
-        <p></p>
+        <article></article>
     </section>
 
+    <!--
     <section id="se_smykkerne_paa">
         <h2></h2>
         <p class="wp-block-separator">
     </section>
+-->
 
 
 
@@ -106,7 +108,7 @@
         // indhentning af json her
         function visTop() {
             document.querySelector("#om h1").innerHTML = topContent.title.rendered;
-            document.querySelector("#om p").innerHTML = topContent.content.rendered;
+            document.querySelector("#om article").innerHTML = topContent.content.rendered;
         }
 
 

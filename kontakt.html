@@ -41,9 +41,9 @@
 
 
     <!------------mobil main------------>
-    <section id="om">
+    <section id="kontakt">
         <h1></h1>
-        <p></p>
+        <article></article>
     </section>
 
 
@@ -80,12 +80,9 @@
         // indhentning af json her
         function vis(page) {
             console.log(page);
-            document.querySelector("h1").textContent = page.title.rendered;
-            document.querySelector("p").innerHTML = page.content.rendered;
+            document.querySelector("#kontakt h1").textContent = page.title.rendered;
+            document.querySelector("#kontakt article").innerHTML = page.content.rendered;
         }
-
     </script>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
