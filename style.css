@@ -344,16 +344,32 @@ button {
 
 
 #om article {
-    max-width: 300vw;
+    width: 100vw;
     padding: 30px;
     margin: auto;
 }
 
+#om h1 {
+    padding-bottom: 0;
+}
+
+#om .wp-block-video video {
+
+    width: 100vw;
+    object-fit: contain;
+    padding-bottom: 30px;
+
+}
 
 
 
-
-
+.display img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin: auto;
+    padding: 30px;
+}
 
 
 
@@ -632,62 +648,62 @@ button {
         transition: .8s;
     }
 
+
+
+    /*OM WEB*/
+
+    .data_container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .navn {
+        padding: 15px;
+        font-size: 1.3em;
+
+
+    }
+
+    .instagram-konto_eller_navn {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    #om article {
+        width: 100vw;
+        padding: 30px;
+        margin: auto;
+    }
+
+    #om h1 {
+        padding: 0;
+    }
+
+    .display img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
+        padding: 30px;
+    }
+
+    #om .wp-block-video video {
+        width: 750px;
+
+    }
+
+
+    /*FOOTER*/
+
+    footer a {
+        font-size: 1em;
+    }
+
 }
-
-/*OM WEB*/
-
-.data_container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 6px;
-}
-
-.navn {
-    padding: 15px;
-    font-size: 1.3em;
-
-
-}
-
-.instagram-konto_eller_navn {
-    padding: 15px;
-    font-size: 1em;
-}
-
-#om article {
-    width: 100vw;
-    padding: 30px;
-    margin: auto;
-}
-
-#om h1 {
-    padding: 0;
-}
-
-.display img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    margin: auto;
-    padding: 30px;
-}
-
-#om .wp-block-video video {
-    width: 750px;
-
-}
-
-
-/*FOOTER*/
-
-footer a {
-    font-size: 1em;
-}
-
-
 
 
 
