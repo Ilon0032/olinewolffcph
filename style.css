@@ -61,9 +61,10 @@ a {
 
 p {
     font-size: 1.1em;
-    font-family: "bellotalight";
+    font-family: 'Roboto', sans-serif;
     margin: 1em;
     color: #626262;
+    line-height: 1.7em;
 }
 
 .wp-block-separator {
@@ -1023,6 +1024,14 @@ h3 .data_container {
 }
 
 @font-face {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+
+@font-face {
     font-family: 'bellotaregular';
     src: url('fonts/Bellota-Regular-webfont.woff2') format('woff2'),
         url('fonts/Bellota-Regular-webfont.woff') format('woff'),
@@ -1031,7 +1040,9 @@ h3 .data_container {
     font-style: normal;
 
 }
+*/
 
+/*
 @font-face {
     font-family: 'bellotalight_italic';
     src: url('fonts/Bellota-LightItalic-webfont.woff2') format('woff2'),
@@ -1051,7 +1062,9 @@ h3 .data_container {
     font-style: normal;
 
 }
+*/
 
+/*
 @font-face {
     font-family: 'bellotaitalic';
     src: url('fonts/Bellota-Italic-webfont.woff2') format('woff2'),
@@ -1062,7 +1075,9 @@ h3 .data_container {
     font-style: normal;
 
 }
+*/
 
+/*
 @font-face {
     font-family: 'bellotabold_italic';
     src: url('fonts/Bellota-BoldItalic-webfont.eot');
@@ -1075,7 +1090,9 @@ h3 .data_container {
     font-style: normal;
 
 }
+*/
 
+/*
 @font-face {
     font-family: 'bellotabold';
     src: url('fonts/Bellota-Bold-webfont.eot');
@@ -1088,3 +1105,4 @@ h3 .data_container {
     font-style: normal;
 
 }
+*/
