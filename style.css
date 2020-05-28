@@ -212,6 +212,11 @@ a:visited {
     color: #626262;
 }
 
+footer a:visited,
+footer a:link {
+    color: white;
+}
+
 /* selected link */
 a:active {
     color: #99AABF;
