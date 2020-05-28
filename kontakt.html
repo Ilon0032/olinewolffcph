@@ -10,6 +10,12 @@
 
     <script src="https://kit.fontawesome.com/e1ee2b9569.js" crossorigin="anonymous"></script>
     <style>
+        #kontakt article {
+            max-width: 300vw;
+            padding: 20px;
+            margin: auto;
+        }
+
         form.wpcf7-form {
             background: #C8E2E6;
             padding: 20px;
@@ -17,15 +23,22 @@
             font-family: "Athena-Regular";
         }
 
+        #kontakt p {
+            font-size: 1.1em;
+            font-family: "bellotalight";
+            margin: 1em;
+        }
 
         input.wpcf7-form-control.wpcf7-submit {
             padding: 3px 6px;
         }
 
-        #kontakt p {
-            font-size: 1.1em;
-            font-family: "bellotalight";
-            margin: 1em;
+        @media screen and (min-width:1080px) {
+
+            div.wp-block-column p {
+                max-width: 600px;
+
+            }
         }
 
     </style>

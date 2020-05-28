@@ -428,7 +428,16 @@ button {
 
 /*SINGLE VIEW MOBIL CSS*/
 
+.detalje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.detalje img {
+    align-self: center;
+}
 
 
 
