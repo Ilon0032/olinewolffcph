@@ -9,6 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/e1ee2b9569.js" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (min-width:1080px) {
+            .data_container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-gap: 6px;
+            }
+
+            .navn {
+                padding: 15px;
+                font-size: 1em;
+            }
+
+            .instagram-konto_eller_navn {
+                padding: 15px;
+                font-size: 1em;
+            }
+    </style>
 </head>
 
 <body>
@@ -45,15 +66,6 @@
         <h1></h1>
         <article></article>
     </section>
-
-    <!--
-    <section id="se_smykkerne_paa">
-        <h2></h2>
-        <p class="wp-block-separator">
-    </section>
--->
-
-
 
     <section class="data_container"></section>
 
@@ -127,10 +139,10 @@
                 klon.querySelector(".instagram-konto_eller_navn").innerHTML = display.content.rendered;
 
 
-                /* eventlistener som går til ny side ved klik på enkel smykke */
-                klon.querySelector(".display").addEventListener("click", () => {
-                    location.href = `singleview.html?id=${display.id}`;
-                });
+                //                /* eventlistener som går til ny side ved klik på enkel smykke */
+                // klon.querySelector(".display").addEventListener("click", () => {
+                // location.href = `singleview.html?id=${display.id}`;
+                // });
 
                 container.appendChild(klon)
             })

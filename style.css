@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -11,10 +12,23 @@ img {
     object-fit: cover;
 }
 
+.wp-block-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+video {
+    width: 100%;
+}
+
 h1 {
     font-family: "Athena-Regular";
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
+    margin: 1em;
 }
 
 h2,
@@ -33,7 +47,7 @@ li {
 
 }
 
-p {
+p .forside {
     font-size: 1.1em;
     font-family: "bellotalight";
     margin: 1em;
@@ -487,6 +501,13 @@ nav {
         display: none;
     }
 
+    .wp-block-separator {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
 }
 
 /*
@@ -498,8 +519,8 @@ nav {
 */
 
 .display img {
-    width: 160px;
-    height: 160px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
