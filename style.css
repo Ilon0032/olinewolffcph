@@ -32,6 +32,7 @@ h1 {
     color: #626262;
     font-weight: 100;
     letter-spacing: 0.2em;
+
 }
 
 h2,
@@ -84,6 +85,7 @@ footer ul li {
 }
 
 footer ul li a {
+    font-size: 1.2em;
     color: #fff;
     padding-left: 1em;
 }
@@ -195,6 +197,10 @@ nav {
 
 #main_nav {
     display: none;
+}
+
+button {
+    border-color: #C8E2E6;
 }
 
 
