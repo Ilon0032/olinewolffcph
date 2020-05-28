@@ -29,6 +29,9 @@ h1 {
     text-align: center;
     font-size: 2em;
     margin: 1em;
+    color: #626262;
+    font-weight: 100;
+    letter-spacing: 0.2em;
 
 }
 
@@ -37,6 +40,9 @@ h3 {
     font-family: "Athena-Regular";
     text-align: center;
     font-size: 1.4em;
+    color: #626262;
+    font-weight: 90;
+    letter-spacing: 0.2em;
 }
 
 a,
@@ -53,6 +59,7 @@ p .forside {
     font-size: 1.1em;
     font-family: "bellotalight";
     margin: 1em;
+    color: #626262;
 }
 
 .wp-block-separator {
@@ -88,21 +95,31 @@ footer i {
     color: #fff;
 }
 
-#btn {
+#forside_tekst {
     text-decoration: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 1em;
     margin-bottom: 2em;
+    color: #626262;
 }
 
-#btn button {
-    border: 1px solid #000;
-    background-color: #fff;
-    font-family: "Athena-Regular";
-    font-size: 1.2em;
-    padding: 0.4em;
+.wp-block-buttons {
+    border-top: 1px solid #C8E2E6;
+    border-bottom: 1px solid #C8E2E6;
+    font-size: 1.7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+
+.wp-block-buttons a:hover {
+    color: #dcf3f7;
+    transition: .6s;
+}
+
+
 
 /*MENU MOBIL CSS*/
 
@@ -180,6 +197,10 @@ nav {
 
 #main_nav {
     display: none;
+}
+
+button {
+    border-color: #C8E2E6;
 }
 
 
@@ -603,6 +624,15 @@ nav {
     margin: auto;
     padding: 30px;
 }
+
+footer {
+    height: 10vh;
+}
+
+footer a {
+    font-size: 1em;
+}
+
 
 /*
 .display_temp {
