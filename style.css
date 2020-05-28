@@ -213,7 +213,8 @@ a:visited {
 }
 
 footer a:visited,
-footer a:link {
+footer a:link,
+footer a:active {
     color: white;
 }
 
