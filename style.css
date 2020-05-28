@@ -45,6 +45,7 @@ li {
     text-decoration: none;
     color: #000;
 
+
 }
 
 p .forside {
@@ -56,8 +57,8 @@ p .forside {
 .wp-block-separator {
     margin-top: 4em;
     margin-bottom: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 footer {
@@ -77,6 +78,7 @@ footer ul li {
 
 footer ul li a {
     color: #fff;
+    padding-left: 1em;
 }
 
 footer i {
@@ -447,6 +449,44 @@ nav {
 
 
 
+/*MEDIA QUERYS IPAD CSS*/
+
+@media screen and (min-width:768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .nav_links li {
+        margin: 0.7em;
+        font-size: 1.5em;
+
+    }
+
+    p .forside {
+        font-size: 1.8em;
+    }
+
+    footer a {
+        font-size: 1.6em;
+    }
+
+    button a {
+        font-size: 1.7em;
+    }
+
+    .burger div {
+        width: 35px;
+        height: 4px;
+        margin: 3px;
+
+    }
+}
+
+
 /*MEDIA QUERY WEB CSS*/
 
 @media screen and (min-width:1080px) {
@@ -508,6 +548,42 @@ nav {
         margin-right: 4em;
     }
 
+    .wp-block-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    video {
+        width: 1200px;
+    }
+
+
+
+    .wp-block-columns {
+        display: flex;
+        justify-content: center;
+        margin: 2em;
+
+
+
+    }
+
+    .wp-block-column img {
+        width: 600px;
+    }
+
+    p .forside {
+        font-size: 1.3em;
+        width: 300px;
+    }
+
+    #btn {
+        font-size: 0.8em;
+        justify-content: flex-end;
+    }
 }
 
 /*
@@ -519,9 +595,11 @@ nav {
 */
 
 .display img {
-    width: 300px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
+    margin: auto;
+    padding: 30px;
 }
 
 /*
