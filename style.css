@@ -490,10 +490,12 @@ nav {
 }
 
 /*
+
 #om {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
+*/
 
 .display img {
     width: 160px;
@@ -501,18 +503,12 @@ nav {
     object-fit: cover;
 }
 
+/*
 .display_temp {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300, 3fr));
-}*/
-
-
-
-
-
-
-
-
+}
+*/
 
 
 
