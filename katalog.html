@@ -11,34 +11,44 @@
     <script src="https://kit.fontawesome.com/e1ee2b9569.js" crossorigin="anonymous"></script>
     <style>
         .smykker img {
+            width: 100%;
             height: 400px;
-            z-index: -5;
+            padding: 30px 30px 0 30px;
+            margin: auto;
         }
 
         .navn {
-            /* margin: 0 0.4em -0.5em 0.4em;*/
-            margin: 0 auto;
-            z-index: 999;
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-            width: 60%;
-            top: -9%;
+            margin-bottom: -0.5em;
         }
 
         .pris {
             font-size: 2.5em;
             text-align: end;
             font-weight: bold;
-            margin: -1em 0.4em 0 0.4em;
-            z-index: 2;
+            margin: 0 30px 0 30px;
         }
 
-        .smykker {
-            margin: 3.5em 0 1em 0;
-            position: relative;
-            display: inline-block;
+
+
+        .filter_nav {
+            border-bottom: 1px solid black;
+            margin: 2.5em 1em;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            font-size: 1.1em;
+            font-family: "bellotalight";
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        .valgt {
+            font-family: "bellotabold";
         }
 
         @media screen and (min-width:1080px) {
@@ -50,8 +60,6 @@
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 grid-gap: 6px;
             }
-
-
         }
     </style>
 </head>
@@ -93,6 +101,15 @@
         <h1></h1>
         <p></p>
     </section>
+
+    <nav class="filter_nav">
+        <button class="filter alle valgt" data-kat="alle">Alle</button>
+        <button class="filter oreringe" data-kat="øreringe">Øreringe</button>
+        <button class="filter halskaeder" data-kat="halskæder">Halskæder</button>
+        <button class="filter armbaand" data-kat="armbånd">Armbånd</button>
+    </nav>
+
+
     <section class="data_container"></section>
 
     <template class="smykke_temp">
@@ -121,6 +138,7 @@
         const endpointSmykke = "http://lunahvalsoe.dk/kea/2_semester/eksamensprojekt_tema10/wordpress/wp-json/wp/v2/smykke";
         let topContent;
         let alleSmykker = [];
+        let filter = "alle";
 
 
         document.addEventListener("DOMContentLoaded", start);
@@ -129,6 +147,7 @@
         function start() {
             console.log("start");
             hentJSON();
+            addListenersToButtons();
         }
 
         async function hentJSON() {
@@ -151,25 +170,43 @@
         function visSmykker() {
             const container = document.querySelector(".data_container");
             const smykkeTemplate = document.querySelector(".smykke_temp");
+            container.innerHTML = "";
 
             /* smykkerne vises */
             alleSmykker.forEach(smykke => {
 
-                let klon = smykkeTemplate.cloneNode(true).content;
+                if (filter == "alle" || filter == smykke.smykke_type) {
+                    let klon = smykkeTemplate.cloneNode(true).content;
 
-                klon.querySelector(".navn").textContent = smykke.navn_p_smykke;
-                klon.querySelector("img").src = smykke.billede.guid;
-                klon.querySelector("img").alt = "Billede af " + smykke.navn_p_smykke;
-                klon.querySelector(".pris").textContent = smykke.pris + ",-";
+                    klon.querySelector(".navn").textContent = smykke.navn_p_smykke;
+                    klon.querySelector("img").src = smykke.billede.guid;
+                    klon.querySelector("img").alt = "Billede af " + smykke.navn_p_smykke;
+                    klon.querySelector(".pris").textContent = smykke.pris + ",-";
 
-                /* eventlistener som går til ny side ved klik på enkel smykke */
-                klon.querySelector(".smykker").addEventListener("click", () => {
-                    location.href = `singleview.html?id=${smykke.id}`;
-                });
+                    /* eventlistener som går til ny side ved klik på enkel smykke */
+                    klon.querySelector(".smykker").addEventListener("click", () => {
+                        location.href = `singleview.html?id=${smykke.id}`;
+                    });
 
-                container.appendChild(klon)
+                    container.appendChild(klon);
+                }
+
             })
 
+        }
+
+        function addListenersToButtons() {
+            document.querySelectorAll(".filter_nav .filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+        }
+
+        function filtrering() {
+            filter = this.dataset.kat;
+            document.querySelector(".valgt").classList.remove("valgt");
+            this.classList.add("valgt");
+
+            visSmykker();
         }
     </script>
     <script src="script.js"></script>
