@@ -51,7 +51,6 @@
             border-bottom: 1px solid #C8E2E6;
             font-size: 1.1em;
             cursor: pointer;
-
             font-family: 'Roboto', sans-serif;
         }
 
@@ -65,14 +64,44 @@
             font-weight: bold;
         }
 
-        @media screen and (min-width:1080px) {
+        @media screen and (min-width:500px) {
+            .smykker img {
+                height: 60vh;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .smykker img {
+                height: 50vh;
+            }
+
+            .filter_nav {
+                margin: 2.5em 5em 1em 5em;
+                font-size: 1.1em;
+            }
+
             .data_container {
                 max-width: 1000px;
                 margin: 0 auto;
                 padding: 10px;
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
                 grid-gap: 6px;
+            }
+        }
+
+        @media screen and (min-width:1080px) {
+            .data_container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .smykker img {
+                height: 30vh;
+            }
+
+            .filter_nav {
+                margin: 2.5em 10em 1em 10em;
+                font-size: 1.3em;
             }
         }
 
