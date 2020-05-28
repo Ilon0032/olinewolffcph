@@ -9,6 +9,51 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/e1ee2b9569.js" crossorigin="anonymous"></script>
+    <style>
+        .smykker img {
+            height: 400px;
+            z-index: -5;
+        }
+
+        .navn {
+            /* margin: 0 0.4em -0.5em 0.4em;*/
+            margin: 0 auto;
+            z-index: 999;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            width: 60%;
+            top: -9%;
+        }
+
+        .pris {
+            font-size: 2.5em;
+            text-align: end;
+            font-weight: bold;
+            margin: -1em 0.4em 0 0.4em;
+            z-index: 2;
+        }
+
+        .smykker {
+            margin: 3.5em 0 1em 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        @media screen and (min-width:1080px) {
+            .data_container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-gap: 6px;
+            }
+
+
+        }
+    </style>
 </head>
 
 <body>
@@ -54,7 +99,6 @@
         <article class="smykker">
             <h1 class="navn"></h1>
             <img src="" alt="">
-            <p class="info"></p>
             <p class="pris"></p>
         </article>
     </template>
@@ -116,7 +160,6 @@
                 klon.querySelector(".navn").textContent = smykke.navn_p_smykke;
                 klon.querySelector("img").src = smykke.billede.guid;
                 klon.querySelector("img").alt = "Billede af " + smykke.navn_p_smykke;
-                klon.querySelector(".info").textContent = smykke.content.rendered;
                 klon.querySelector(".pris").textContent = smykke.pris + ",-";
 
                 /* eventlistener som går til ny side ved klik på enkel smykke */
