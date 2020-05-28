@@ -197,6 +197,10 @@ nav {
     display: none;
 }
 
+button {
+    border-color: #C8E2E6;
+}
+
 
 /*-----------Animationer---------*/
 .drop {
