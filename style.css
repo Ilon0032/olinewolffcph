@@ -206,6 +206,17 @@ nav {
     display: none;
 }
 
+/* unvisited link */
+a:link,
+a:visited {
+    color: #626262;
+}
+
+/* selected link */
+a:active {
+    color: #99AABF;
+}
+
 button {
     border-color: #C8E2E6;
     font-weight: 100;
@@ -351,7 +362,7 @@ button {
 
 #om h1 {
 
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #om .wp-block-video video {
@@ -362,7 +373,10 @@ button {
 
 }
 
-
+.display:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
 
 .display img {
     width: 100%;
@@ -406,7 +420,10 @@ h3 .data_container {
 /*KONTAKT MOBIL CSS*/
 
 
+#kontakt h1 {
 
+    margin-bottom: 0;
+}
 
 
 
@@ -671,7 +688,7 @@ h3 .data_container {
 
     }
 
-    .display .instagram-konto_eller_navn {
+    .instagram-konto_eller_navn {
         padding: 15px;
         font-size: 1em;
     }
