@@ -12,14 +12,33 @@
     <style>
         .smykker img {
             height: 400px;
+            z-index: -5;
+        }
+
+        .navn {
+            /* margin: 0 0.4em -0.5em 0.4em;*/
+            margin: 0 auto;
+            z-index: 999;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            width: 60%;
+            top: -9%;
         }
 
         .pris {
             font-size: 2.5em;
             text-align: end;
             font-weight: bold;
-            margin: 0 0.4em;
+            margin: -1em 0.4em 0 0.4em;
             z-index: 2;
+        }
+
+        .smykker {
+            margin: 3.5em 0 1em 0;
+            position: relative;
+            display: inline-block;
         }
 
         @media screen and (min-width:1080px) {
@@ -34,7 +53,6 @@
 
 
         }
-
     </style>
 </head>
 
@@ -153,9 +171,6 @@
             })
 
         }
-
     </script>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
