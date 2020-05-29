@@ -376,7 +376,7 @@ button {
 
 #om article {
     width: 100vw;
-    padding: 30px;
+    padding: 1em;
     margin: auto;
 }
 
@@ -398,12 +398,21 @@ button {
     transition: .8s;
 }
 
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .display img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    margin: auto;
     padding: 30px;
+    border: 1px solid #99AABF;
+
 }
 
 /*
@@ -582,6 +591,32 @@ h3 .data_container {
         width: 35px;
         height: 4px;
         margin: 3px;
+
+    }
+
+    /*------ OM IPAD -------*/
+    .data_container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .display .navn {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+
+    .display img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #om .wp-block-video video {
+        width: 750px;
 
     }
 }
