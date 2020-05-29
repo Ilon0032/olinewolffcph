@@ -159,13 +159,9 @@ footer i {
 
 }
 
-navbar {
-    display: flex;
+#mobil_nav {
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
 }
-
 
 
 .nav_links {
@@ -591,6 +587,10 @@ h3 .data_container {
 
 @media screen and (min-width:1080px) {
 
+    nav {
+        display: block;
+    }
+
     h1,
     h2 {
         margin-top: 1.5em;
@@ -610,16 +610,9 @@ h3 .data_container {
         margin: 0.3em;
     }
 
-    .mobil_nav {
-        display: none;
-    }
-
 
     #main_nav {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        align-items: center;
+        display: block;
         padding-top: 2em;
         padding-left: 4em;
         padding-right: 4em;
