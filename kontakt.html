@@ -67,22 +67,30 @@
 
             }
         }
+
     </style>
 </head>
 
 <body>
 
-    <navbar>
-        <div>
-            <li><a href="index.html"><img class="logo_mobil" src="billeder/shell.PNG"></a></li>
-        </div>
-        <ul class="nav_links">
-            <li><a href="index.html">HJEM</a></li>
-            <li><a href="katalog.html">KATALOG</a></li>
-            <li><a href="om.html">OM</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
+    <header>
+        <nav id="mobil_nav">
+            <div>
+                <li><a href="index.html"><img class="logo_mobil" src="billeder/shell.PNG"></a></li>
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="katalog.html">KATALOG</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
 
-        </ul>
 
         <nav id="main_nav">
             <ul>
@@ -94,15 +102,8 @@
                 <li><a href="om.html">OM</a></li>
                 <li><a href="kontakt.html">KONTAKT</a></li>
             </ul>
-
         </nav>
-
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </navbar>
+    </header>
 
 
     <!------------mobil main------------>
@@ -151,6 +152,9 @@
             document.querySelector("#kontakt h1").textContent = page.title.rendered;
             document.querySelector("#kontakt article").innerHTML = page.content.rendered;
         }
+
     </script>
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>

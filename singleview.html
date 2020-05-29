@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <navbar>
+        <nav id="mobil_nav">
             <div>
                 <li><a href="index.html"><img class="logo_mobil" src="billeder/shell.PNG"></a></li>
             </div>
@@ -21,28 +21,26 @@
                 <li><a href="katalog.html">KATALOG</a></li>
                 <li><a href="om.html">OM</a></li>
                 <li><a href="kontakt.html">KONTAKT</a></li>
-
             </ul>
-
-            <nav id="main_nav">
-                <ul>
-                    <div>
-                        <li><a href="index.html"><img class="logo" src="billeder/shell.PNG"></a></li>
-                    </div>
-                    <li><a href="index.html">HJEM</a></li>
-                    <li><a href="katalog.html">KATALOG</a></li>
-                    <li><a href="om.html">OM</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
-                </ul>
-
-            </nav>
-
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-        </navbar>
+        </nav>
+
+
+        <nav id="main_nav">
+            <ul>
+                <div>
+                    <li><a href="index.html"><img class="logo" src="billeder/shell.PNG"></a></li>
+                </div>
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="katalog.html">KATALOG</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!------------template------------>
@@ -116,7 +114,10 @@
             detalje.querySelector(".farve").innerHTML = smykke.farve;
             detalje.querySelector(".pris").innerHTML = smykke.pris + ",-";
         }
+
     </script>
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
