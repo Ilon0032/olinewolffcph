@@ -804,15 +804,13 @@ h3 .data_container {
     /* ----- Kontakt ------ */
 
     #kontakt .wp-block-columns {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
 
-    #kontakt .wp-block-column {
-        margin-left: 5em;
-    }
 
     /*FOOTER*/
 
