@@ -324,29 +324,148 @@ button {
 
 /*PRODUKTER MOBIL CSS*/
 
+.smykker {
+    border: 0.5px solid #99AABF;
+    margin: 1.2em 1.2em 2em 1.2em;
+    cursor: pointer;
+}
+
+.smykker img {
+    width: 100%;
+    height: 50vh;
+    padding: 30px 30px 0px 30px;
+    margin: auto;
+}
+
+.smykker:hover {
+    transform: scale(1.02);
+    transition: 1s;
+}
+
+.navn {
+    font-size: 2em;
+    margin: 0.5em 1em -0.5em 1em;
+}
+
+.pris {
+    font-size: 1.3em;
+    text-align: end;
+    margin: 0 30px 5px 30px;
+}
+
+.farve {
+    font-size: 1.3em;
+    margin: 0 30px 5px 30px;
+}
+
+.smykker div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter_nav {
+    margin: 2.5em 1em 1em 1em;
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #C8E2E6;
+    border-bottom: 1px solid #C8E2E6;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+.valgt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
 
 
 
 
 
+/*SINGLEVIEW MOBIL CSS*/
 
+.breadcrumb {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: flex;
+    margin: 0 2em;
+}
 
+.breadcrumb li {
+    padding: 1em 0;
+}
 
+.breadcrumb li + li:before {
+    padding: 8px;
+    color: #99AABF;
+    content: "/\00a0";
+}
 
+.breadcrumb li:last-child {
+    opacity: 0.7;
+}
 
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
 
+.pris {
+    font-size: 1.5em;
+    text-align: end;
+    margin: 0 30px 0px 30px;
+    font-weight: bold;
+}
 
+.detalje button {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #C8E2E6;
+    border-bottom: 1px solid #C8E2E6;
+    cursor: pointer;
+}
 
+.detalje button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
 
+.detalje button a {
+    color: #99aabf;
+}
 
+.detalje .col div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
 
+.detalje img {
+    width: 100%;
+}
 
+/*SINGLE VIEW MOBIL CSS*/
 
+.detalje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
+.detalje img {
+    align-self: center;
+}
 
 
 
@@ -394,11 +513,6 @@ button {
     object-fit: contain;
     padding-bottom: 30px;
 
-}
-
-.display:hover {
-    transform: scale(1.1);
-    transition: .8s;
 }
 
 .display {
@@ -502,18 +616,6 @@ h3 .data_container {
 
 
 
-/*SINGLE VIEW MOBIL CSS*/
-
-.detalje {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.detalje img {
-    align-self: center;
-}
 
 
 
@@ -562,6 +664,12 @@ h3 .data_container {
 
 
 /*MEDIA QUERYS IPAD CSS*/
+
+@media screen and (min-width:500px) {
+    .smykker img {
+        height: 60vh;
+    }
+}
 
 @media screen and (min-width:768px) {
     h1 {
@@ -636,6 +744,41 @@ h3 .data_container {
 
     #kontakt .wp-block-column form textarea {
         width: 500px;
+    }
+
+    /*------ SINGLEVIEW -------*/
+    .detalje .col div {
+        margin-bottom: 3em;
+        margin-top: 2em;
+    }
+
+    .detalje img {
+        padding: 1em;
+        width: 750px;
+    }
+
+    .detalje .col:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*-------- PRODUKTER ------*/
+    .smykker img {
+        height: 50vh;
+    }
+
+    .filter_nav {
+        margin: 2.5em 5em 1em 5em;
+        font-size: 1.1em;
+    }
+
+    .data_container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-gap: 6px;
     }
 }
 
@@ -779,7 +922,6 @@ h3 .data_container {
 
     #om article {
         width: 100vw;
-        padding: 30px;
         margin: auto;
     }
 
@@ -814,10 +956,59 @@ h3 .data_container {
 
     /*FOOTER*/
 
+    footer {
+        padding: 0 5em;
+    }
+
     footer a {
         font-size: 1em;
     }
 
+
+    /*SINGLEVIEW*/
+    .detalje .col_wrap {
+        display: flex;
+        align-items: center;
+        margin: 0 4em 5em 4em;
+    }
+
+    .detalje .col {
+        flex-grow: 1;
+        flex-basis: 300px;
+        display: block;
+    }
+
+    .pris {
+        font-size: 1.7em;
+    }
+
+    .detalje .col div {
+        margin-top: 4em;
+    }
+
+    .breadcrumb {
+        margin: 2em 5em 0 5em;
+    }
+
+    .detalje img {
+        width: 100%;
+        height: 50vw;
+        padding: 0;
+    }
+
+    /*PRODUKTER*/
+    .data_container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .smykker img {
+        height: 30vh;
+    }
+
+    .filter_nav {
+        margin: 2.5em 10em 1em 10em;
+        font-size: 1.3em;
+    }
 }
 
 
