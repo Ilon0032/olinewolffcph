@@ -40,6 +40,16 @@
             margin: 0 30px 5px 30px;
         }
 
+        .farve {
+            font-size: 1.3em;
+            margin: 0 30px 5px 30px;
+        }
+
+        .smykker div {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .filter_nav {
             margin: 2.5em 1em 1em 1em;
             display: flex;
@@ -171,7 +181,10 @@
         <article class="smykker">
             <h3 class="navn"></h3>
             <img src="" alt="">
-            <p class="pris"></p>
+            <div>
+                <p class="farve"></p>
+                <p class="pris"></p>
+            </div>
         </article>
     </template>
     <!------------mobil footer------------>
@@ -240,6 +253,7 @@
                     klon.querySelector("img").src = smykke.billede.guid;
                     klon.querySelector("img").alt = "Billede af " + smykke.navn_p_smykke;
                     klon.querySelector(".pris").textContent = smykke.pris + ",-";
+                    klon.querySelector(".farve").textContent = smykke.farve;
 
                     /* eventlistener som går til ny side ved klik på enkel smykke */
                     klon.querySelector(".smykker").addEventListener("click", () => {
