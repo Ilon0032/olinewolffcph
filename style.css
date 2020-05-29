@@ -12,6 +12,11 @@ img {
     object-fit: cover;
 }
 
+.logo_mobil {
+    width: 50px;
+    margin: 0.5em;
+}
+
 .wp-block-video {
     display: flex;
     justify-content: center;
@@ -68,11 +73,6 @@ p {
     line-height: 1.7em;
 }
 
-.logo_mobil {
-    width: 50px;
-    margin: 0.5em;
-}
-
 .wp-block-separator {
     margin-top: 4em;
     margin-bottom: 4em;
@@ -93,12 +93,10 @@ footer ul li {
     padding-bottom: 0.5em;
     text-decoration: underline;
     color: #fff;
-    margin-top: 0.5em;
-
 }
 
 footer ul li a {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #fff;
     padding-left: 1em;
 }
@@ -106,15 +104,6 @@ footer ul li a {
 footer i {
     padding-right: 0.3em;
     color: #fff;
-}
-
-footer .aabningstider p {
-    color: #fff;
-    font-family: "Athena-Regular";
-    font-size: 1em;
-    margin-top: 0;
-    padding-top: 0;
-
 }
 
 #forside_tekst {
@@ -175,7 +164,6 @@ navbar {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-
 }
 
 
@@ -613,16 +601,25 @@ h3 .data_container {
         margin-right: 2em;
     }
 
+    .logo_mobil {
+        display: none;
+    }
+
     .logo {
         width: 80px;
         margin: 0.3em;
     }
 
+    .mobil_nav {
+        display: none;
+    }
+
+
     #main_nav {
         display: flex;
+        justify-content: space-between;
         align-content: center;
         align-items: center;
-        display: block;
         padding-top: 2em;
         padding-left: 4em;
         padding-right: 4em;

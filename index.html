@@ -17,17 +17,18 @@
     <!------------mobile first nav------------>
 
     <navbar>
-        <div>
+        <div class="mobil_nav">
             <li><a href="index.html"><img class="logo_mobil" src="billeder/shell.PNG"></a></li>
         </div>
+        <div class="mobil_nav">
+            <ul class="nav_links">
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="katalog.html">KATALOG</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
 
-        <ul class="nav_links">
-            <li><a href="index.html">HJEM</a></li>
-            <li><a href="katalog.html">KATALOG</a></li>
-            <li><a href="om.html">OM</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-
-        </ul>
+            </ul>
+        </div>
 
         <nav id="main_nav">
             <ul>
@@ -97,9 +98,6 @@
             document.querySelector("h1").textContent = page.title.rendered;
             document.querySelector("p").innerHTML = page.content.rendered;
         }
-
     </script>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
