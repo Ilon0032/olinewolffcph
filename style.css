@@ -86,7 +86,7 @@ footer {
     align-content: center;
     align-items: center;
     background-color: #99AABF;
-    height: 20vh;
+    height: 25vh;
 }
 
 footer ul li {
@@ -94,6 +94,7 @@ footer ul li {
     text-decoration: underline;
     color: #fff;
 }
+
 
 footer ul li a {
     font-size: 1.2em;
@@ -103,6 +104,10 @@ footer ul li a {
 
 footer i {
     padding-right: 0.3em;
+    color: #fff;
+}
+
+footer p {
     color: #fff;
 }
 
@@ -120,7 +125,7 @@ footer i {
 .wp-block-buttons {
     border-top: 1px solid #C8E2E6;
     border-bottom: 1px solid #C8E2E6;
-    font-size: 1.7em;
+    font-size: 1.3em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -372,7 +377,7 @@ button {
 
 #om article {
     width: 100vw;
-    padding: 30px;
+    padding: 1em;
     margin: auto;
 }
 
@@ -394,12 +399,21 @@ button {
     transition: .8s;
 }
 
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .display img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    margin: auto;
     padding: 30px;
+    border: 1px solid #99AABF;
+
 }
 
 /*
@@ -580,6 +594,47 @@ h3 .data_container {
         margin: 3px;
 
     }
+
+
+    /*------ OM IPAD -------*/
+    .data_container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .display .navn {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+
+    .display img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #om .wp-block-video video {
+        width: 750px;
+
+    }
+
+
+    /*------ KONTAKT -----*/
+    #kontakt .wp-block-column form {
+        width: 600px;
+    }
+
+    #kontakt .wp-block-column form input {
+        width: 500px;
+    }
+
+    #kontakt .wp-block-column form textarea {
+        width: 500px;
+    }
 }
 
 
@@ -743,6 +798,15 @@ h3 .data_container {
 
     }
 
+
+    /* ----- Kontakt ------ */
+
+    #kontakt .wp-block-columns {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
 
     /*FOOTER*/
 
