@@ -109,6 +109,8 @@ footer i {
 
 footer p {
     color: #fff;
+    text-decoration: none;
+    margin-left: 1em;
 }
 
 #forside_tekst {
@@ -806,6 +808,10 @@ h3 .data_container {
         justify-content: center;
         align-content: center;
         align-items: center;
+    }
+
+    #kontakt .wp-block-column {
+        margin-left: 5em;
     }
 
     /*FOOTER*/
