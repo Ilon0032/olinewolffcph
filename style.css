@@ -93,10 +93,12 @@ footer ul li {
     padding-bottom: 0.5em;
     text-decoration: underline;
     color: #fff;
+    margin-top: 0.5em;
+
 }
 
 footer ul li a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
     padding-left: 1em;
 }
@@ -104,6 +106,15 @@ footer ul li a {
 footer i {
     padding-right: 0.3em;
     color: #fff;
+}
+
+footer .aabningstider p {
+    color: #fff;
+    font-family: "Athena-Regular";
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+
 }
 
 #forside_tekst {
