@@ -77,7 +77,7 @@ a {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     margin: 1em;
     color: #626262;
@@ -121,7 +121,12 @@ footer i {
 footer p {
     color: #fff;
     text-decoration: none;
-    margin-left: 0.5em;
+    margin-left: 1em;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
 }
 
 #forside_tekst {
