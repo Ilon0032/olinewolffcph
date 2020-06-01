@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(billeder/augustine-wong-li0iC0rjvvg-unsplash_opa_50.png);
+    background-image: url(billeder/augustine-wong-li0iC0rjvvg-unsplash_OPA35.png);
     background-repeat: no-repeat;
 }
 
@@ -278,6 +278,9 @@ button {
 
 
 /*FORSIDE MOBIL CSS*/
+#forside h2 {
+    padding-bottom: 30px;
+}
 
 .wp-block-column {
     display: flex;
@@ -288,7 +291,11 @@ button {
 }
 
 
-
+.wp-image-299 {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
 
 
 
@@ -750,6 +757,13 @@ h3 .data_container {
     }
 
 
+    .wp-image-299 {
+        width: 100%;
+        height: 60vh;
+        margin: 0 auto;
+    }
+
+
     /*------ OM IPAD -------*/
     .data_container {
         max-width: 1000px;
@@ -946,6 +960,11 @@ h3 .data_container {
         transition: .8s;
     }
 
+    .wp-image-299 {
+        width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+    }
 
 
     /*OM WEB*/
