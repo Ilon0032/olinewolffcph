@@ -445,8 +445,8 @@ button:hover {
 .detalje button {
     background-color: transparent;
     border: none;
-    border-top: 1px solid #C8E2E6;
-    border-bottom: 1px solid #C8E2E6;
+    border-top: 1px solid #a69472;
+    border-bottom: 1px solid #a69472;
     cursor: pointer;
 }
 
@@ -456,7 +456,7 @@ button:hover {
 }
 
 .detalje button a {
-    color: #99aabf;
+    color: #a69472;
 }
 
 .detalje .col div {
@@ -510,7 +510,9 @@ button:hover {
 /*OM MOBIL CSS*/
 
 
-
+.display .navn {
+    display: none;
+}
 
 #om article {
     width: 100vw;
@@ -522,6 +524,8 @@ button:hover {
 
     margin-bottom: 0;
 }
+
+
 
 #om .wp-block-video video {
 
@@ -540,12 +544,24 @@ button:hover {
 }
 
 .display img {
-    width: 100%;
+    width: 350px;
     height: 350px;
     object-fit: cover;
     padding: 30px;
     border: 1px solid #99AABF;
 
+}
+
+.citat {
+    width: 100vw;
+    height: 100%;
+    background-color: #99AABF;
+    margin-bottom: 50px;
+}
+
+.citat h3 {
+    color: #fff;
+    padding: 10px;
 }
 
 /*
@@ -586,7 +602,6 @@ h3 .data_container {
 
     margin-bottom: 0;
 }
-
 
 
 
@@ -733,8 +748,7 @@ h3 .data_container {
     }
 
     .display .navn {
-        padding: 15px;
-        font-size: 1.3em;
+        display: none;
     }
 
     .display img {
@@ -750,17 +764,25 @@ h3 .data_container {
 
 
     /*------ KONTAKT -----*/
+
+
+    #kontakt .wpcf7-submit {
+        width: auto;
+    }
+
     #kontakt .wp-block-column form {
         width: 600px;
     }
 
-    #kontakt .wp-block-column form input {
+    #kontakt .wpcf7-validates-as-email,
+    .wpcf7-validates-as-required {
         width: 500px;
     }
 
     #kontakt .wp-block-column form textarea {
         width: 500px;
     }
+
 
     /*------ SINGLEVIEW -------*/
     .detalje .col div {
@@ -925,9 +947,7 @@ h3 .data_container {
     }
 
     .display .navn {
-        padding: 15px;
-        font-size: 1.3em;
-
+        display: none;
 
     }
 
