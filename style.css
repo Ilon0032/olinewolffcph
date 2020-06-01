@@ -445,8 +445,8 @@ button:hover {
 .detalje button {
     background-color: transparent;
     border: none;
-    border-top: 1px solid #C8E2E6;
-    border-bottom: 1px solid #C8E2E6;
+    border-top: 1px solid #a69472;
+    border-bottom: 1px solid #a69472;
     cursor: pointer;
 }
 
@@ -456,7 +456,7 @@ button:hover {
 }
 
 .detalje button a {
-    color: #99aabf;
+    color: #a69472;
 }
 
 .detalje .col div {
@@ -586,7 +586,6 @@ h3 .data_container {
 
     margin-bottom: 0;
 }
-
 
 
 
