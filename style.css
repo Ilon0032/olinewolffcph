@@ -342,7 +342,7 @@ button {
     transition: 1s;
 }
 
-.navn {
+.smykker .navn {
     font-size: 2em;
     margin: 0.5em 1em -0.5em 1em;
 }
@@ -375,7 +375,9 @@ button {
     border-bottom: 1px solid #C8E2E6;
     font-size: 1.1em;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Athena-Regular";
+    color: #626262;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -384,7 +386,6 @@ button:hover {
 }
 
 .valgt {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -405,6 +406,11 @@ button:hover {
     padding: 1em 0;
 }
 
+.breadcrumb li a {
+    border-top: 1px solid #C8E2E6;
+    border-bottom: 1px solid #C8E2E6;
+}
+
 .breadcrumb li + li:before {
     padding: 8px;
     color: #99AABF;
@@ -416,7 +422,11 @@ button:hover {
 }
 
 .breadcrumb li a:hover {
-    text-decoration: underline;
+    opacity: 0.5;
+    border-top: 1px solid #99AABF;
+    border-bottom: 1px solid #99AABF;
+    transform: scale(1.1);
+    transition: .7s;
 }
 
 .pris {
@@ -687,7 +697,7 @@ h3 .data_container {
     }
 
     p .forside {
-        font-size: 1.8em;
+        font-size: 1.1em;
     }
 
     footer a {
@@ -882,7 +892,7 @@ h3 .data_container {
     }
 
     p .forside {
-        font-size: 1.3em;
+        font-size: 1.1em;
         width: 300px;
     }
 
@@ -1006,8 +1016,7 @@ h3 .data_container {
     }
 
     .filter_nav {
-        margin: 2.5em 10em 1em 10em;
-        font-size: 1.3em;
+        margin: 2.5em 14em 1em 14em;
     }
 }
 
