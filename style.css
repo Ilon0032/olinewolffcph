@@ -131,11 +131,17 @@ footer p {
 }
 
 .wp-block-buttons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid #A69472;
     border-bottom: 1px solid #A69472;
     font-size: 1.3em;
     margin-top: 1em;
     margin-bottom: 1em;
+    text-align: center;
+    width: 200px;
 }
 
 .wp-block-buttons a:hover {
@@ -932,6 +938,11 @@ h3 .data_container {
 
     .wp-block-buttons {
         font-size: 1.1em;
+        text-align: center;
+    }
+
+    .wp-block-button is-style-outline {
+        text-align: center;
     }
 
     .wp-block-buttons:hover {
