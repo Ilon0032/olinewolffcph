@@ -1047,6 +1047,7 @@ h3 .data_container {
 
     footer {
         padding: 0 5em;
+        justify-content: space-between;
     }
 
     footer a {
