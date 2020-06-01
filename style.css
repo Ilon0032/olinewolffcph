@@ -510,7 +510,9 @@ button:hover {
 /*OM MOBIL CSS*/
 
 
-
+.display .navn {
+    display: none;
+}
 
 #om article {
     width: 100vw;
@@ -522,6 +524,8 @@ button:hover {
 
     margin-bottom: 0;
 }
+
+
 
 #om .wp-block-video video {
 
@@ -732,8 +736,7 @@ h3 .data_container {
     }
 
     .display .navn {
-        padding: 15px;
-        font-size: 1.3em;
+        display: none;
     }
 
     .display img {
@@ -924,9 +927,7 @@ h3 .data_container {
     }
 
     .display .navn {
-        padding: 15px;
-        font-size: 1.3em;
-
+        display: none;
 
     }
 
