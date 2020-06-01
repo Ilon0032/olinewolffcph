@@ -93,7 +93,7 @@ p {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     background-color: #99AABF;
@@ -107,7 +107,7 @@ footer ul li {
 
 
 footer ul li a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
     padding-left: 1em;
     text-decoration: none;
@@ -121,7 +121,7 @@ footer i {
 footer p {
     color: #fff;
     text-decoration: none;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 #forside_tekst {
