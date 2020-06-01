@@ -764,17 +764,25 @@ h3 .data_container {
 
 
     /*------ KONTAKT -----*/
+
+
+    #kontakt .wpcf7-submit {
+        width: auto;
+    }
+
     #kontakt .wp-block-column form {
         width: 600px;
     }
 
-    #kontakt .wp-block-column form input {
+    #kontakt .wpcf7-validates-as-email,
+    .wpcf7-validates-as-required {
         width: 500px;
     }
 
     #kontakt .wp-block-column form textarea {
         width: 500px;
     }
+
 
     /*------ SINGLEVIEW -------*/
     .detalje .col div {
