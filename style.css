@@ -545,23 +545,29 @@ button:hover {
 
 .display img {
     width: 350px;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
     padding: 30px;
     border: 1px solid #99AABF;
 
 }
 
+/*
 .citat {
     width: 100vw;
     height: 100%;
     background-color: #99AABF;
+    opacity: 70%;
     margin-bottom: 50px;
 }
+*/
 
-.citat h3 {
-    color: #fff;
-    padding: 10px;
+.citat p {
+    color: #99AABF;
+    padding-bottom: 20px;
+    text-align: center;
+
+    font-size: 1em;
 }
 
 /*
