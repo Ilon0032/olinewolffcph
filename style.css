@@ -387,15 +387,15 @@ button {
 }
 
 .filter_nav {
-    margin: 2.5em 1em 1em 1em;
+    margin: 2.5em 0em 1em 0em;
     display: flex;
 }
 
 button {
     background-color: transparent;
     border: none;
-    border-top: 1px solid #C8E2E6;
-    border-bottom: 1px solid #C8E2E6;
+    border-top: 1px solid #99AABF;
+    border-bottom: 1px solid #99AABF;
     font-size: 1.1em;
     cursor: pointer;
     font-family: "Athena-Regular";
@@ -565,7 +565,7 @@ button:hover {
     height: 500px;
     object-fit: cover;
     padding: 30px;
-    border: 1px solid #99AABF;
+    border: 0.5px solid rgba(153, 170, 191, 0.46);
 
 }
 
