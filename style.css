@@ -32,7 +32,7 @@ img {
 }
 
 video {
-    width: 100vw;
+    width: 50vw;
 }
 
 h1 {
@@ -908,7 +908,7 @@ h3 .data_container {
     }
 
     video {
-        width: 100vw;
+        width: 90vw;
         height: 80vh;
         object-fit: cover;
     }
