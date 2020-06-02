@@ -21,6 +21,11 @@
 </head>
 
 <body>
+    <div id="loading">
+
+        <img src="billeder/Asset%202load.svg" alt="logo loading screen">
+
+    </div>
 
     <!------------mobile first nav------------>
 
@@ -93,6 +98,7 @@
         const endpoint = "http://lunahvalsoe.dk/kea/2_semester/eksamensprojekt_tema10/wordpress/wp-json/wp/v2/pages/5";
 
         async function start() {
+            document.querySelector("#loading").classList.add("hide");
             console.log("start");
             const response = await fetch(endpoint);
             const json = await response.json();
@@ -105,9 +111,6 @@
             document.querySelector("h1").textContent = page.title.rendered;
             document.querySelector("p").innerHTML = page.content.rendered;
         }
-
     </script>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
