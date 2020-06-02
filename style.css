@@ -743,9 +743,35 @@ h3 .data_container {
 
 
 
+/*MEDIA QUERYS iphone 5 CSS*/
 
+@media screen and (min-width:310px) {
+    footer a {
+        font-size: 0.7em;
 
+    }
 
+    #filtrering button {
+        font-size: 0.8em;
+    }
+
+    #kontakt .wpcf7-submit {
+        width: 100vw;
+    }
+
+    #kontakt .wp-block-column form {
+        width: 300px;
+    }
+
+    #kontakt .wpcf7-validates-as-email,
+    .wpcf7-validates-as-required {
+        width: 300px;
+    }
+
+    #kontakt .wp-block-column form textarea {
+        width: 300px;
+    }
+}
 
 /*MEDIA QUERYS IPAD CSS*/
 
