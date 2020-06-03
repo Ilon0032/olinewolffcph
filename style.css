@@ -760,17 +760,19 @@ h3 .data_container {
     }
 
     #kontakt .wp-block-column form {
+        width: 370px;
+    }
+
+    #kontakt .wp-block-column form input {
         width: 300px;
     }
 
-    #kontakt .wpcf7-validates-as-email,
-    .wpcf7-validates-as-required {
-        width: 300px;
+    .wp-block-separator {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
-    #kontakt .wp-block-column form textarea {
-        width: 300px;
-    }
+
 }
 
 /*MEDIA QUERYS IPAD CSS*/
