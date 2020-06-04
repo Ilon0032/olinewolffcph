@@ -848,6 +848,10 @@ h3 .data_container {
         width: 500px;
     }
 
+    #kontakt .wp-block-column form input {
+        width: 500px;
+    }
+
     #kontakt .wp-block-column form textarea {
         width: 500px;
     }
