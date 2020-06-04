@@ -8,24 +8,7 @@
 }
 
 #loading {
-    background-color: #99AABF;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: opacity 3s ease-in;
-}
-
-.hide {
-    opacity: 0%;
-    pointer-events: none;
+    display: none;
 }
 
 body {
@@ -913,6 +896,27 @@ h3 .data_container {
 /*MEDIA QUERY WEB CSS*/
 
 @media screen and (min-width:1080px) {
+
+    #loading {
+        background-color: #99AABF;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: opacity 3s ease-in;
+    }
+
+    .hide {
+        opacity: 0%;
+        pointer-events: none;
+    }
 
     nav {
         display: block;
